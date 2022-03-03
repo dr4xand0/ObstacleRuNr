@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Obstacle RuNr</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+
+    <link rel="stylesheet" type="text/css" href="../common/style.css">
+
+    <script type="text/javascript" src="../lib/gl-matrix-min.js"></script>
+    <script type="text/javascript" src="../lib/dat.gui.min.js"></script>
+    <script type="module" src="17-game.js"></script>
+</head>
+<body>
+    <script>
+        var audio = new Audio("../common/sounds/gameMusic.mp3");
+            audio.volume = 0.1;
+            audio.play();
+    </script>
+    <div class="overlay">
+        <a class="back" href="../index.html">Back</a>
+    </div>
+    <div class="overlay" id="timer" style="position: absolute; left: 100px;">  
+    </div>
+    <div class="fullscreen">
+        <canvas></canvas>
+    </div>
+</body>
+</html>
